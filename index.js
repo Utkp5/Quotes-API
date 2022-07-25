@@ -11,6 +11,13 @@ const randomQuotes = () =>
 //   console.log(data[randomnumber].author);
   Quote.innerText = `${data[randomnumber].text}`;
   Author.innerText = `Author :- ${data[randomnumber].author}`;
+
+  // To change backgroundColor
+  const randomColor = () => {
+    var randomColor = Math.floor(Math.random()*16777215).toString(16); //we can simply write these line without making arrow function, there is no logic behind of writing arrow function ( <-- for confusion purpose).
+    Generate.style.backgroundColor = '#' + randomColor;
+  }
+  randomColor();
 };
 
 const getQuotes = async () => {
