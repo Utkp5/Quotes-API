@@ -1,6 +1,6 @@
 const Quote = document.querySelector(".quote");
 const Author = document.querySelector(".author");
-const Generate = document.querySelector(".generate");
+const Generate = document.querySelector(".button");
 
 
 let data = "";
@@ -24,5 +24,5 @@ const getQuotes = async () => {
     console.log(error);
   }
 };
-// getQuotes();
+
 Generate.addEventListener("click", getQuotes);
