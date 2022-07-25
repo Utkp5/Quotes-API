@@ -77,6 +77,8 @@
     transition: all 0.5s;
 }
 
+/* media queries */
+
 @media (max-width:1200px) {
     .quote
     {
